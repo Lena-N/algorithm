@@ -1,0 +1,32 @@
+package selectionsort;
+import java.util.Arrays;
+public class SelectionSort {
+
+    public static void main(String[] args) {
+        int numbers[]={5,3,4,6,7,1,2};
+        System.out.println("the unsorted nums are:");
+        System.out.println(Arrays.toString(numbers));
+        sort(numbers);
+    }
+    public static void sort(int[]ar){
+    for(int i=0;i<ar.length-1;i++){
+        int Minindex=i;
+        for(int j=i+1;j<ar.length;j++){
+            if(ar[j]<ar[Minindex]){
+                Minindex=j;}
+        }
+        int temp=ar[Minindex];
+        ar[Minindex]=ar[i];
+        ar[i]=temp;
+    }
+    System.out.println("the sorted numbers are:");
+    System.out.println(Arrays.toString(ar));
+    }
+    
+}
+
+
+/*the unsorted nums are:
+[5, 3, 4, 6, 7, 1, 2]
+the sorted numbers are:
+[1, 2, 3, 4, 5, 6, 7]/*
