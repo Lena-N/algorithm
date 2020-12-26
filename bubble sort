@@ -35,3 +35,9 @@ public class Bubble_Sort {
     }
     
 }
+
+
+/*the original sequance is: 
+8, 5, 6, 7, 3, 1, 
+the sorted sequance is
+1, 2, 3, 5, 6, 7, /*
