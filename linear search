@@ -1,0 +1,26 @@
+
+package linearsearch;
+public class LinearSearch {
+
+  
+    public static void main(String[] args) {
+        int numbers[]={7,5,3,2,1,4,6};
+        int y=9;
+        LSearch(numbers,y);
+    }
+    public static void LSearch(int arr[],int x){
+        int i;
+        for(i=0;i<arr.length;i++){
+            if(arr[i]== x)
+            { System.out.println("the no is found at index:"+i);
+            break;
+            }
+        }
+        if (i==arr.length)
+            System.out.println("the no is not found");
+    }
+}
+
+
+
+/*the no is not found*/
