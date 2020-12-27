@@ -1,0 +1,19 @@
+
+package unmodifiedlinearsearch;
+
+public class UnModifiedLinearSearch {
+
+    public static void main(String[] args) {
+        int numbers[]={7,5,3,1,2,4,6};
+        int data=6;
+        System.out.println("the no is founf at index:"+linearsearch(numbers,0,data));
+        
+    }
+    public static int linearsearch(int arr[],int index,int data){
+        if(index!=data)
+            return linearsearch(arr,index+1,data);
+        else
+            return index;
+    }
+    
+}
